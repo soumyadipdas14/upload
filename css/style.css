@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.banner {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 59, 59, 0.459) 0%, rgb(0, 0, 0) 100%), url(../css/images/2244808.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav_bar {
+    position: relative;
+    top: 10px;
+    margin: auto;
+
+    width: 95%;
+
+    /* border: 1px solid white; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l {
+    width: 100px
+}
+
+.l img {
+    width: 80px;
+}
+
+
+.nav_links {
+    width: 55%;
+    /* border: 1px solid greenyellow; */
+}
+
+.opt:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 12px;
+    background: white;
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform .4s linear;
+}
+
+.opt:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+.nav_links ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_links ul li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+    transition: all 0.6s;
+}
+
+.nav_links ul li a:hover {
+    color: rgb(255, 102, 0);
+
+}
+
+.drop1 {
+    display: none;
+}
+
+.nav_links ul li:hover .drop1 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 150px;
+    height: 125px;
+    background: rgba(200, 179, 179, 0.24);
+    border-radius: 10px;
+}
+
+.nav_links ul li:hover .drop1 ul {
+    display: inline-block;
+    left: 7px;
+}
+
+.nav_links ul li:hover .drop1 ul li {
+    width: 100%;
+    line-height: 40px;
+}
+
+.drop1 ul li i {
+    position: relative;
+    float: right;
+    right: 30px;
+    top: 12px;
+}
+
+.sub_m1 {
+    display: none;
+}
+
+.drop1 ul li:hover .sub_m1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 100%;
+    background: rgba(200, 179, 179, 0.24);
+    border-radius: 10px;
+}
+
+.sub_m2 {
+    display: none;
+}
+
+.drop1 ul li:hover .sub_m2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 100%;
+    background: rgba(200, 179, 179, 0.24);
+    border-radius: 10px;
+}
+
+.sub_m3 {
+    display: none;
+}
+
+.drop1 ul li:hover .sub_m3 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 100%;
+    background: rgba(200, 179, 179, 0.24);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+    width: 210px;
+    height: 28px;
+    margin-right: 80px;
+    /* border: 1px solid white; */
+    display: flex;
+}
+
+.search input {
+    position: absolute;
+    width: 100%;
+    height: 28px;
+    padding-left: 60px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+
+    border: none;
+    background: rgba(255, 255, 255, 0.458);
+
+
+    font-size: 20px;
+}
+
+.search input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.search button {
+    position: absolute;
+    top: 2px;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    border: none;
+}
+
+.btn {
+    background: url(../css/images/search_FILL0_wght400_GRAD0_opsz48.svg);
+    background-position: center;
+    background-size: contain;
+}
+
+.btn:hover {
+    background: url(../css/images/btn.png);
+    background-position: center;
+    background-size: contain;
+    transition: all 0.1s;
+}
+
+.name {
+    position: absolute;
+    top: 65px;
+    width: 150px;
+    height: 20px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 11px;
+    color: white;
+
+
+}
+
+.info {
+    position: relative;
+    width: 70%;
+    height: 60vh;
+    /* border: 1px solid white; */
+    margin: auto;
+    top: 200px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    /* border: 1px solid white; */
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+}
+
+.box1 {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    bottom: -20px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+
+}
+
+.box2 {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    bottom: -20px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+
+}
+
+.box3 {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    bottom: -20px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+
+}
+
+.p1 {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+}
+
+.p2 {
+    position: absolute;
+    width: 100%;
+    height: 9%;
+    top: calc(40% + 1px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.p3 {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: calc(50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.p4 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: calc(55% + 1px);
+}
+
+.p5 {
+    position: absolute;
+    width: 100%;
+    height: 13%;
+    bottom: 0px;
+    border-radius: 0 0 10px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.box1 .p1 {
+    background: url(../css/materials/malaysia_masters_2022.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box2 .p1 {
+    background: url(../css/materials/Singapore_open_2022.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box3 .p1 {
+    background: url(../css/materials/taipei_open_2022.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box1 .p4 {
+    background: url(../css/materials/suffix_500-01.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.box2 .p4 {
+    background: url(../css/materials/suffix_500-01.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.box3 .p4 {
+    background: url(../css/materials/suffix_300-01.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.box1 .p5 {
+    background: rgba(0, 157, 31, 0.768);
+}
+
+.box2 .p5 {
+    background: rgb(160, 0, 0);
+}
+
+.box3 .p5 {
+    background: rgba(128, 128, 128, 0.821);
+}
+
+.box1 {
+    transition: .1s;
+}
+
+.box1:hover {
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.box2 {
+    transition: .1s;
+}
+
+.box2:hover {
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.box3 {
+    transition: .1s;
+}
+
+.box3:hover {
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.copyright {
+    position: fixed;
+    color: rgba(0, 255, 255, 0.182);
+    right: 0;
+    bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
